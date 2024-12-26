@@ -1,8 +1,6 @@
 # Data Bot
 
-This chatbot, made using Python is capable of taking a data file as input along with the end-user's textual instructions 
-about the data and provide the desired results to the end-user in the form of either data plots or textual inferences 
-based on the insights from the inputted data file. 
+This chatbot uses an NLP Model to create graphical plots based on user inputted data file and instructions. These instructions input the columns to be used for the creation of graphical plots. Additionally, this tool also does data quality check of uploaded data file along with sentiment analysis of user-inputted text.
 
 ## Description (Incomplete)
 
