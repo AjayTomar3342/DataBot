@@ -111,17 +111,22 @@ This is a quick process to start the testing of GitHub project taken from the Of
 
 * This program has been tested on both MacOS and Windows system. The IDE's used for testing on both these systems were PyCharm and Visual Code. The program worked satisfactorily for both IDE's in Windows OS but in MacOS, program faced some issues with PyCharm IDE. On development side, these issues were namely difficulty in changing background colour and sizing of Tkinter Window which would not be faced by end-users but would impact development of the program. On end-user side, the Tkinter window where user submit textual instructions does not make the text visible which might make it tough for the user to edit their instruction. Since these issues only show up in MacOS environment, PyCharm users operating on a Windows system will not face this issue. The alternative for MacBook users is to use VS Code for the operations of this program. 
 
-### Executing program (Incomplete)
+## Procedure followed in the Project:
 
-* How to run the program
-* Step-by-step bullets     
-* In order to submit instructions which will propel the ChatBot to create graphical plots, such an instruction is set as default. 
-```
-Please create a heatmap for Column Age, Column Id, Column 0 and Column Unnamed: 0
-```
-Such an instruction should contain which specific kind of graphical plot is required by the user and which columns should 
-be used in the graphical plot. For simplicity, replacement of the graphical plot and the columns required should be done in
-the above-mentioned dummy instruction. 
+   * **Creation of Graphical Plots:**
+   End-user opens the UI window and uploads an excel file which he/she wants to use for the creation of graphical plots (with button *Upload Excel File*). After uploading of this excel data file, user submits the instruction which consists of the columns to use for creation of the graphical plot (with button *Submit Instructions*). As default the following instruction is added in the dialog box **Please create a heatmap for Column Age, Column Id, Column Year and Column Gender**. Simply replace the plot type and column names so as to get desired results. As of now, the following graphical plots are supported for this program: Scatter Plot, Bar Plot, Line Plot, Pie Chart, Histogram, Box Plot, Area Plot, Bubble Plot, Dot Plot and Heatmap. 
+   
+   * **Creation of Data Quality Check Report:**
+   After user clicks on the button Upload for *Data Quality Check*, he/she needs to upload the excel file for which data quality check report is desired. Soon after uploading, the processing inside the program will happen and a downloadable word document file will be provided as result to the user. Providing a word document instead of a pdf document is a deliberate decision as end-user might need to change a few things in the report (as per personal requirements) and doing that would require more effort with a pdf file. Regarding the data checks, the following aspects are checked for each column of the data file: Presence of unwanted columns, Presence of outliers, Null values proportion, Data Type Consistency, Summary statistics. Regarding the data checks for the overall excel file, Duplicate Rows percentage is analyzed and reported.  
+   
+   * **Step 3:**
+   The result of previous step is also visualized to test the hypothesis that serial killers have more negative sentiment words written about them when compared to Vital People. This hypothesis is testes using Kolmogorov-Smirnov Test. This step is performed in the analysis_and_visualization_of_sentiments_count.py file. 
+  
+   * **Step 4:**
+   In the last part of the project, other analysis based on the Wikipedia data are done such as comparing lengths of articles of vital people vs. serial killers and finding most dominant words in the two above mentioned categories. A wordmap is made in the other_analysis.py file.  
+
+  **NOTE:** 
+All csv files made and used in the above steps are present in the Data_Files folder.
 
 ## Features and Outputs
 This ChatBot consists of the following features:
