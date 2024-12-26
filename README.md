@@ -130,27 +130,40 @@ This is a quick process to start the testing of GitHub project taken from the Of
 
 ### UI Screenshots
 
+<p align="center">
 <img src="UI_Result_Screenshots/UI_VSCode.png"> 
-UI Screenshot obtained from MacOS with VSCode IDE.
-<img src="UI_Result_Screenshots/UI_PyCharm.png">  
-UI Screenshot obtained from MacOS with PyCharm IDE.
-<img src="UI_Result_Screenshots/UI_VSCode2.png">  
-<h1 align="center">UI Screenshot with descriptive hover-text obtained from MacOS with VSCode IDE.</h1>
+<ins> UI Screenshot obtained from MacOS with VSCode IDE </ins>
+</p>
 
+<p align="center">
+<img src="UI_Result_Screenshots/UI_PyCharm.png">  
+<ins> UI Screenshot obtained from MacOS with PyCharm IDE </ins>
+</p>
+
+<p align="center">
+<img src="UI_Result_Screenshots/UI_VSCode2.png">  
+<ins> <h1 align="center">UI Screenshot with descriptive hover-text obtained from MacOS with VSCode IDE </ins>
+</p>
 
 
 
 
 ### Results
 
+<p align="center">
 <img src="UI_Result_Screenshots/Result_Graphical_Plots.png"> 
-Resulting Graphical Plot available for downloade by end-user. It might be beneficial for some users to use the graphical plot in the browser itself as engagement with the plot is interative in this format. 
+<ins> Resulting Graphical Plot available for downloade by end-user. It might be beneficial for some users to use the graphical plot in the browser itself as engagement with the plot is interative in this format </ins>
+</p>
+
+<p align="center">
 <img src="UI_Result_Screenshots/Result_Data_Quality_Check.png">  
-Data Quality Check report screenshot from the resulting docx file. 
+<ins>Data Quality Check report screenshot from the resulting docx file</ins> 
+</p>
+
 
 <p align="center">
 <img src="UI_Result_Screenshots/Result_Sentiment_Analysis_Report.png">  
-**Sentiment Analysis report screenshot from the resulting docx file**
+<ins>Sentiment Analysis report screenshot from the resulting docx file</ins>
 </p>
 
 
