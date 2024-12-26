@@ -177,14 +177,4 @@ def sentiment_analyzer(input_text):
 #                    "real meaning behind any of it. Every day is just a repeat of the last — the same dull routine, "
 #                    "the same empty conversations, the same relentless, crushing weight of existence. Nothing improves, "
 #                    "nothing changes. Hope is just a fleeting illusion, something to keep us moving forward even when "
-#                    "we know deep down it’s all an empty promise. People talk, but they never listen. They pretend to "
-#                    "care, but their words are hollow, meaningless. Every attempt to connect feels like a failure, a "
-#                    "reminder that we’re all just drifting in this vast, indifferent universe, unable to truly reach "
-#                    "one another. The more we try to understand, the less we really know.And all the things I once "
-#                    "cared about? They've faded into the background, forgotten in the chaos. What’s the point of "
-#                    "ambition or dreams when they’re just as fragile as everything else? Life just keeps going, "
-#                    "whether you want it to or not, and every step forward feels like a small surrender, a little piece "
-#                    "of your soul chipped away by the weight of the world. It’s hard to escape the feeling that nothing "
-#                    "is ever truly right. There’s always a dark cloud looming, no matter how hard you try to push it "
-#                    "away. The good moments are fleeting, and the bad ones seem to stretch on forever. It’s exhausting. "
-#                    "And in the end, does any of it even matter?")
+#                    "we know deep down it’s all an empty promise. People talk, but they never listen. ")

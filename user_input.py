@@ -111,7 +111,7 @@ def get_user_instructions():
 
     # Open dialog box to allow user to input instructions
     instruction = simpledialog.askstring("How may I help you?", "Enter your thoughts:"
-    , initialvalue="Please create a heatmap for Column Age, Column Id, Column 0 and Column Unnamed: 0", parent=root)
+    , initialvalue="Please create a heatmap for Column Age, Column Id, Column Year and Column Gender", parent=root)
 
     if instruction:  # If the user submitted an instruction
         try:
