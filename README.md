@@ -143,8 +143,12 @@ UI Screenshot obtained from MacOS with PyCharm IDE.
 Resulting Graphical Plot available for downloade by end-user. It might be beneficial for some users to use the graphical plot in the browser itself as engagement with the plot is interative in this format. 
 <img src="UI_Result_Screenshots/Result_Data_Quality_Check.png">  
 Data Quality Check report screenshot from the resulting docx file. 
+
+<p align="center">
 <img src="UI_Result_Screenshots/Result_Sentiment_Analysis_Report.png">  
 Sentiment Analysis report screenshot from the resulting docx file. 
+</p>
+
 
 
 
