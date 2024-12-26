@@ -2,27 +2,115 @@
 
 This chatbot uses an NLP Model to create graphical plots based on user inputted data file and instructions. These instructions input the columns to be used for the creation of graphical plots. Additionally, this tool also does data quality check of uploaded data file along with sentiment analysis of user-inputted text.
 
-## Description (Incomplete)
+## Description
 
-The user will update the data file (excel or csv) based on which he/she will ask questions from the Chat Bot. 
-As long as these questions fall under the domain of data analysis and basic science tasks, the Chat Bot will
-give plots and insights about the data as a response. The following services are available by this Chat Bot:
+The end-user will update a data file (xls or xlsx) based on which he/she provide an instruction which will consist of the columns to be used for creation of graphical plots. 
+As a result, a downloadable graphical plot is returned back to the user. Including this main function, the following functions are available in this Data Bot:
 
 1.) Creation of downloadable plots as required by the end-user. 
-
-## Architecture (Incomplete)
+2.) Creation of a downloadable data quality check report.
+3.) Creation of a sentiment analysis report of the textual input by end-user.
 
 ## Getting Started 
 
-### Dependencies (Incomplete) 
+### Requirements to run and test the project:
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
+To run this project, you will need Python3+, pip and Git installed on the system. 
 
-### Installing (Incomplete)
+The reference links are provided below.
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+> **Python:**
+  https://www.python.org/downloads/
+  
+> **pip:**
+  https://pypi.org/project/pip/
+
+> **Git:**
+  https://git-scm.com/downloads
+	
+The necessary libraries and packages are specified in the **requirements.txt** file and will be validated in the below steps
+
+### Process for acquiring the results: 
+
+  * **Step 1:**
+  Create a local directory in your machine where you want to pull the git project and clone the project by running the below command from cmd 
+  (Make sure that you are in the newly created directory first!):
+  
+  	```git clone https://github.com/AjayTomar3342/DataBot```
+
+  * **Step 2:**
+  From cmd, move into the main folder of the cloned project
+  
+ 	 ```cd DataBot```
+
+  * **Step 3:**
+  Execute the below commands to meet the pre-requisites to execute the code
+  
+  ```  	
+      Unix/macOS
+      python -m pip install -r requirements.txt
+
+      Windows
+      py -m pip install -r requirements.txt
+  ```
+
+  
+  * **Step 4:**
+  Execute the below commands to run the code from cmd
+  
+  ``` 
+      Unix/macOS
+      python main.py
+
+      Windows
+      %run main.py
+  ```
+
+
+### Alternative Process for acquiring the results(Backup):
+
+For quick running of program, PyCharm use is suggested as it has good controls for removing manual steps to pull a repository and get it running.
+
+Steps are:
+
+  * **Step 1:**
+  Make sure one is signed in on Github in Pycharm
+  
+  * **Step 2:**
+  Open a new project
+  
+  * **Step 3:**
+  Go to VCS Option on the Top Horizontal Options Bar
+  
+  * **Step 4:**
+  Select Enable Version Control Integration Control inside VCS if not done already
+  
+  * **Step 5:**
+  After checking the previous option on, select Checkout from Version Control and select Git
+  
+  * **Step 6:**
+  In the new pop up window, include the link of the github repository you are trying to pull.
+  Subsequently in the same pop up window, select an appropriate directory where the  project will be pulled.
+  
+  * **Step 7:**
+  Select clone option to start the pulling process.
+  
+  * **Step 8:**
+  Select option to start the pulled project in New Window or This window as per your personal preference.
+  
+  * **Step 9:**
+  After this the project will be up and running and requirements.txt file will automatically install required libraries. Run the file main.py from Root Folder to get the results
+
+This is a quick process to start the testing of GitHub project taken from the Official Jet Brains Website. We have tried this with several PC’s and are confident that this will not give any errors.
+
+> **Link to Above Process Video:**
+  https://www.youtube.com/watch?v=ukbvdF5wqPQ&feature=emb_title
+
+  **NOTE:** 
+* Since, the libraries used in the project are updated by the original developers regularly, some function/functions may not run as expected. This project will be regularly updated as per the updated libraries requirement, but if project does not run at any give time when you pull the project, it may be due to the library change, rather than a coding issue. This repository is last updated as per latest libraries on 31/12/2024.
+
+* a
+
 
 ### Executing program (Incomplete)
 
