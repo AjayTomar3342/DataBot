@@ -132,6 +132,7 @@ This is a quick process to start the testing of GitHub project taken from the Of
 
 <p align="center">
 <img src="UI_Result_Screenshots/UI_VSCode.png"> 
+<br />
 <ins> UI Screenshot obtained from MacOS with VSCode IDE </ins>
 </p>
 
