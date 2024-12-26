@@ -155,7 +155,7 @@ This is a quick process to start the testing of GitHub project taken from the Of
 
 <p align="center">
 <img src="UI_Result_Screenshots/Result_Graphical_Plots.png"> 
-<ins> Resulting Graphical Plot available for downloade by end-user. It might be beneficial for some users to use the graphical plot in the browser itself as engagement with the plot is interative in this format </ins>
+<ins> Resulting Graphical Plot available for downloade by end-user </ins>
 </p>
 
 <p align="center">
@@ -169,6 +169,8 @@ This is a quick process to start the testing of GitHub project taken from the Of
 <ins>Sentiment Analysis report screenshot from the resulting docx file</ins>
 </p>
 
+## Help
+* When the users gets back the required graphical plot, there are two ways to access the plot: Directly via user-system browser or download it as an image. It might be beneficial for some users to access the graphical plot in the browser itself as engagement with the plot is interative in this format and therefore more intuitive for many users to get data-related insights regarding the graphical plot. 
 
 ## Authors
 
