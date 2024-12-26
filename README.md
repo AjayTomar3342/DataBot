@@ -133,7 +133,8 @@ UI Screenshot obtained from MacOS with VSCode IDE.
 <img src="UI_Result_Screenshots/UI_PyCharm.png">  
 UI Screenshot obtained from MacOS with PyCharm IDE.
 <img src="UI_Result_Screenshots/UI_VSCode2.png">  
-UI Screenshot with descriptive hover-text obtained from MacOS with VSCode IDE.
+<h1 align="center">UI Screenshot with descriptive hover-text obtained from MacOS with VSCode IDE.</h1>
+
 
 
 ### UI Screenshots
