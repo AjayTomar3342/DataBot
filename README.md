@@ -109,9 +109,9 @@ This is a quick process to start the testing of GitHub project taken from the Of
   **NOTE:** 
 * Since, the libraries used in the project are updated by the original developers regularly, some function/functions may not run as expected. This project will be regularly updated as per the updated libraries requirement, but if project does not run at any give time when you pull the project, it may be due to the library change, rather than a coding issue. This repository is last updated as per latest libraries on 31/12/2024.
 
-* This program has been tested on both MacOS and Windows system. The IDE's used for testing on both these systems were PyCharm and Visual Code. The program worked satisfactorily for both IDE's in Windows OS but in MacOS, program faced some issues with PyCharm IDE. On development side, these issues were namely difficulty in changing background colour and sizing of Tkinter Window which would not be faced by end-users but would impact development of the program. On end-user side, the Tkinter window where user submit textual instructions does not make the text visible which might make it tough for the user to edit their instruction. Since these issues only show up in MacOS environment, PyCharm users operating on a Windows system will not face this issue. The alternative for MacBook users is to use VS Code for the operations of this program. 
+* This program has been tested on both MacOS and Windows system. The IDE's used for testing on both these systems were PyCharm and Visual Code. The program worked satisfactorily for both IDE's in Windows OS but in MacOS, program faced some issues with PyCharm IDE. On development side, these issues were namely difficulty in changing background colour and sizing of Tkinter Window which would not be faced by end-users but would impact development of the program. On end-user side, the Tkinter window where user submit textual instructions does not make the text visible which might make it tough for the user to edit their instruction. Since these issues only show up in MacOS environment, PyCharm users operating on a Windows system will not face this issue. As per online research it looks like the issue with PyCharm on MacOS is due to a version issue which can only be solved from the JetBrains team. The alternative for MacBook users is to use VS Code for the operations of this program. 
 
-## Procedure followed in the Project:
+## Procedure followed for various functions provided in the Project:
 
    * **Creation of Graphical Plots:**
    End-user opens the UI window and uploads an excel file which he/she wants to use for the creation of graphical plots (with button *Upload Excel File*). After uploading of this excel data file, user submits the instruction which consists of the columns to use for creation of the graphical plot (with button *Submit Instructions*). As default the following instruction is added in the dialog box **Please create a heatmap for Column Age, Column Id, Column Year and Column Gender**. Simply replace the plot type and column names so as to get desired results. As of now, the following graphical plots are supported for this program: Scatter Plot, Bar Plot, Line Plot, Pie Chart, Histogram, Box Plot, Area Plot, Bubble Plot, Dot Plot and Heatmap. 
@@ -119,67 +119,39 @@ This is a quick process to start the testing of GitHub project taken from the Of
    * **Creation of Data Quality Check Report:**
    After user clicks on the button Upload for *Data Quality Check*, he/she needs to upload the excel file for which data quality check report is desired. Soon after uploading, the processing inside the program will happen and a downloadable word document file will be provided as result to the user. Providing a word document instead of a pdf document is a deliberate decision as end-user might need to change a few things in the report (as per personal requirements) and doing that would require more effort with a pdf file. Regarding the data checks, the following aspects are checked for each column of the data file: Presence of unwanted columns, Presence of outliers, Null values proportion, Data Type Consistency, Summary statistics. Regarding the data checks for the overall excel file, Duplicate Rows percentage is analyzed and reported.  
    
-   * **Step 3:**
-   The result of previous step is also visualized to test the hypothesis that serial killers have more negative sentiment words written about them when compared to Vital People. This hypothesis is testes using Kolmogorov-Smirnov Test. This step is performed in the analysis_and_visualization_of_sentiments_count.py file. 
-  
-   * **Step 4:**
-   In the last part of the project, other analysis based on the Wikipedia data are done such as comparing lengths of articles of vital people vs. serial killers and finding most dominant words in the two above mentioned categories. A wordmap is made in the other_analysis.py file.  
+   * **Creation of Sentiment Analysis Report:**
+   End-User submits the text to be analyzed in the sentimental way using the button *Submit Text for Sentiment Analysis*. After some processing, user gets a detailed report which consists of polarity values for the overall text and each individual sentence in the text too.
 
   **NOTE:** 
-All csv files made and used in the above steps are present in the Data_Files folder.
+* All result files are present in the *Result Files* folder.
+* All user input files are stored in the *User Files* folder.
 
-## Features and Outputs
-This ChatBot consists of the following features:
+## UI & Results
 
-<ol type="a">
-  <li> Graphical Plots creation based on User Inputs and data file.</li>
-  <li> Sentiment Analysis of User Inputted text.</li>
-  <li> Data Quality checking of User Inputted data file.</li>
-</ol>
+<img src="UI_Result_Screenshots/UI_VSCode.png"> 
+UI Screenshot obtained from MacOS with VSCode IDE.
+<img src="UI_Result_Screenshots/UI_PyCharm.png">  
+UI Screenshot obtained from MacOS with PyCharm IDE.
+<img src="UI_Result_Screenshots/UI_VSCode2.png">  
+UI Screenshot with descriptive hover-text obtained from MacOS with VSCode IDE.
 
-The outputs of the corresponding features are as follows:
 
-<ol type="a">
-  <li> User gets a downloadable format of the graphical plot he/she requested.</li>
-  <li> A downloadable word document giving a detailed sentiment analysis report.</li>
-  <li> A downloadable word document giving a detailed data quality check report.</li>
-</ol>
+### UI Screenshots
 
-Note: The resulting documents are in editable docx format so that the 
-end-user can edit the files if needed be. 
+<img src="UI_Result_Screenshots/Result_Graphical_Plots.png"> 
+Resulting Graphical Plot available for downloade by end-user. It might be beneficial for some users to use the graphical plot in the browser itself as engagement with the plot is interative in this format. 
+<img src="UI_Result_Screenshots/Result_Data_Quality_Check.png">  
+Data Quality Check report screenshot from the resulting docx file. 
+<img src="UI_Result_Screenshots/Result_Sentiment_Analysis_Report.png">  
+Sentiment Analysis report screenshot from the resulting docx file. 
 
-## Help
 
-### Usage Tips (Incomplete)
 
-Any advice for common problems or issues.
-```
-command to run if program contains helper info
-```
+### Results
+
 
 ## Authors
 
 Contributors names and contact info
 
 1.) Ajay Tomar (https://www.linkedin.com/in/ajaytomar66/)
-
-## Version History
-
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
-
-## License
-
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
-
-## Acknowledgments
-
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
