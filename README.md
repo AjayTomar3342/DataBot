@@ -128,6 +128,8 @@ This is a quick process to start the testing of GitHub project taken from the Of
 
 ## UI & Results
 
+### UI Screenshots
+
 <img src="UI_Result_Screenshots/UI_VSCode.png"> 
 UI Screenshot obtained from MacOS with VSCode IDE.
 <img src="UI_Result_Screenshots/UI_PyCharm.png">  
@@ -137,7 +139,9 @@ UI Screenshot obtained from MacOS with PyCharm IDE.
 
 
 
-### UI Screenshots
+
+
+### Results
 
 <img src="UI_Result_Screenshots/Result_Graphical_Plots.png"> 
 Resulting Graphical Plot available for downloade by end-user. It might be beneficial for some users to use the graphical plot in the browser itself as engagement with the plot is interative in this format. 
@@ -146,13 +150,8 @@ Data Quality Check report screenshot from the resulting docx file.
 
 <p align="center">
 <img src="UI_Result_Screenshots/Result_Sentiment_Analysis_Report.png">  
-Sentiment Analysis report screenshot from the resulting docx file. 
+<ins>**Sentiment Analysis report screenshot from the resulting docx file**</ins>
 </p>
-
-
-
-
-### Results
 
 
 ## Authors
