@@ -150,7 +150,7 @@ Data Quality Check report screenshot from the resulting docx file.
 
 <p align="center">
 <img src="UI_Result_Screenshots/Result_Sentiment_Analysis_Report.png">  
-_Sentiment Analysis report screenshot from the resulting docx file_
+**Sentiment Analysis report screenshot from the resulting docx file**
 </p>
 
 
