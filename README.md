@@ -1,6 +1,6 @@
-# Data Assitant Chat Bot (Check)
+# Data Bot
 
-This chatbot, made using Python is capable of taking a data file as input along with the end-user's textual questions 
+This chatbot, made using Python is capable of taking a data file as input along with the end-user's textual instructions 
 about the data and provide the desired results to the end-user in the form of either data plots or textual inferences 
 based on the insights from the inputted data file. 
 
