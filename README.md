@@ -128,21 +128,21 @@ This is a quick process to start the testing of GitHub project taken from the Of
 
 ## UI & Results
 
-<img src="UI_Result_Screenshots/UI_VSCode.png"> 
+<img src="UI_Result_Screenshots/UI_VSCode.png" width="48"> 
 UI Screenshot obtained from MacOS with VSCode IDE.
-<img src="UI_Result_Screenshots/UI_PyCharm.png">  
+<img src="UI_Result_Screenshots/UI_PyCharm.png" width="48">  
 UI Screenshot obtained from MacOS with PyCharm IDE.
-<img src="UI_Result_Screenshots/UI_VSCode2.png">  
+<img src="UI_Result_Screenshots/UI_VSCode2.png" width="48">  
 UI Screenshot with descriptive hover-text obtained from MacOS with VSCode IDE.
 
 
 ### UI Screenshots
 
-<img src="UI_Result_Screenshots/Result_Graphical_Plots.png"> 
+<img src="UI_Result_Screenshots/Result_Graphical_Plots.png" width="48"> 
 Resulting Graphical Plot available for downloade by end-user. It might be beneficial for some users to use the graphical plot in the browser itself as engagement with the plot is interative in this format. 
-<img src="UI_Result_Screenshots/Result_Data_Quality_Check.png">  
+<img src="UI_Result_Screenshots/Result_Data_Quality_Check.png" width="48">  
 Data Quality Check report screenshot from the resulting docx file. 
-<img src="UI_Result_Screenshots/Result_Sentiment_Analysis_Report.png">  
+<img src="UI_Result_Screenshots/Result_Sentiment_Analysis_Report.png" width="48">  
 Sentiment Analysis report screenshot from the resulting docx file. 
 
 
