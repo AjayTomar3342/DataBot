@@ -138,12 +138,14 @@ This is a quick process to start the testing of GitHub project taken from the Of
 
 <p align="center">
 <img src="UI_Result_Screenshots/UI_PyCharm.png">  
+<br />
 <ins> UI Screenshot obtained from MacOS with PyCharm IDE </ins>
 </p>
 
 <p align="center">
 <img src="UI_Result_Screenshots/UI_VSCode2.png">  
-<ins> <h1 align="center">UI Screenshot with descriptive hover-text obtained from MacOS with VSCode IDE </ins>
+<br />
+<ins> UI Screenshot with descriptive hover-text obtained from MacOS with VSCode IDE </ins>
 </p>
 
 
