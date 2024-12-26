@@ -69,7 +69,7 @@ The necessary libraries and packages are specified in the **requirements.txt** f
 
 ### Alternative Process for acquiring the results(Backup):
 
-For quick running of program, PyCharm use is suggested as it has good controls for removing manual steps to pull a repository and get it running.
+For quick running of program, PyCharm use is suggested as it has good controls for removing manual steps to pull a repository and get it running (Please only use this steps if your PyCharm IDE does not exhibit the issues mentioned below in Note).
 
 Steps are:
 
@@ -109,8 +109,7 @@ This is a quick process to start the testing of GitHub project taken from the Of
   **NOTE:** 
 * Since, the libraries used in the project are updated by the original developers regularly, some function/functions may not run as expected. This project will be regularly updated as per the updated libraries requirement, but if project does not run at any give time when you pull the project, it may be due to the library change, rather than a coding issue. This repository is last updated as per latest libraries on 31/12/2024.
 
-* a
-
+* This program has been tested on both MacOS and Windows system. The IDE's used for testing on both these systems were PyCharm and Visual Code. The program worked satisfactorily for both IDE's in Windows OS but in MacOS, program faced some issues with PyCharm IDE. On development side, these issues were namely difficulty in changing background colour and sizing of Tkinter Window which would not be faced by end-users but would impact development of the program. On end-user side, the Tkinter window where user submit textual instructions does not make the text visible which might make it tough for the user to edit their instruction. Since these issues only show up in MacOS environment, PyCharm users operating on a Windows system will not face this issue. The alternative for MacBook users is to use VS Code for the operations of this program. 
 
 ### Executing program (Incomplete)
 
