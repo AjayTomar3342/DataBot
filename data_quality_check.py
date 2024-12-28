@@ -129,6 +129,8 @@ def data_quality_report_columns(heading, comment,  type, solution, column, first
 # Function to get details about unnamed columns
 def unnamed_columns_count(df):
 
+    solution = "Assign column names manually so as to remove confusion during data file handling."
+
     # Variable to store count of unnamed columns
     count_of_unnamed_columns = len(df.columns[df.columns.str.contains("Unnamed")])
 
@@ -143,6 +145,9 @@ def unnamed_columns_count(df):
     # Write a comment about Unnamed Dataframe columns in Data Quality Report
     data_quality_report( "Unnamed Columns Count (Dataset Level): ", "There are " + str(count_of_unnamed_columns)
                          + " columns found which had no name.", information_type, solution)
+
+    # Save the document to a file
+    doc.save('Result Files/Data Quality Report.docx')
 
 
 # Function to get duplicate rows percentage
@@ -173,6 +178,9 @@ def duplicate_rows_percentage(df):
     # Write a comment about Duplicate Rows percentage in Data Quality Report
     data_quality_report( "Duplicate Rows Percentage (Dataset Level): ", "There are " + str(duplicate_percentage)
                          + "% duplicate rows in the uploaded dataset.", information_type, solution)
+
+    # Save the document to a file
+    doc.save('Result Files/Data Quality Report.docx')
 
 
 # Function to identify outliers in a DataFrame using IQR
@@ -224,7 +232,8 @@ def detect_outliers(df):
                             "as mean and standard deviation in a wrong way so that they show influenced results. Moreover, if "
                             "one plans to use the outlier affected columns in regression models, then outliers can distort the "
                             "relationship between variables in the regression model and impact the model's coefficients and"
-                            " overall fit disproportionately.")
+                            " overall fit disproportionately. If the values in the range above are same, then it might be due to a singular "
+                            "value being the sole outlier but having high frequency in the column.")
 
                 # Assign information to the type warning
                 information_type = "warning"
@@ -238,6 +247,8 @@ def detect_outliers(df):
             # Increment counting variable
             counting_variable+=1
 
+    # Save the document to a file
+    doc.save('Result Files/Data Quality Report.docx')
 
 # Function to null values percentage in each column
 def null_values_proportion(df):
@@ -290,10 +301,14 @@ def null_values_proportion(df):
             counting_value += 1
 
     else:
+        solution = ""
         # Write a comment about Null values of dataframe columns in Data Quality Report
         data_quality_report_columns("Null Values Proportion (Column Level): ", "INFO: There are no null "
                                     "values in the uploaded dataset.", "information", solution,
                                     "no", "true")
+
+    # Save the document to a file
+    doc.save('Result Files/Data Quality Report.docx')
 
 
 # Function to get data type consistency of each column
@@ -363,6 +378,9 @@ def check_columns_data_type_consistency(df):
         data_quality_report_columns("Inconsistent  Data Types Check (Column Level): ", "INFO: There are no "
                                     "columns which have inconsistent data types.", "information", solution,
                                     "no", "true")
+
+    # Save the document to a file
+    doc.save('Result Files/Data Quality Report.docx')
 
 
 # Function to get summary statistics of each column
@@ -453,6 +471,9 @@ def summary_statistics(df):
                                     "number-related columns having multiple data types in their rows.",
                                     "information", solution,"no", "true")
 
+    # Save the document to a file
+    doc.save('Result Files/Data Quality Report.docx')
+
 
 # Function to add final comments to the file
 def final_comments(df):
@@ -464,6 +485,9 @@ def final_comments(df):
     # Write a comment about Summary statistics of columns in Data Quality Report
     data_quality_report_columns("Summary Statistics (Column Level): ", "",
                                 "remarks", remarks, "yes", "true")
+
+    # Save the document to a file
+    doc.save('Result Files/Data Quality Report.docx')
 
 # Function to do data quality analysis
 def data_quality_check():
@@ -496,7 +520,16 @@ def data_quality_check():
     # Use a function to give last comments to the file
     final_comments(df)
 
+    # Read the resulting docx file
+    doc = Document('Result Files/Data Quality Report.docx')
+
+    # print(doc)
+
+    return doc
+
     # print(df)
+
+# data_quality_check()
 
 
 

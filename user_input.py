@@ -147,18 +147,20 @@ def data_quality_check_button():
             # Save the file physically
             data_quality_check_df.to_csv('User Files/data_quality_check_df.csv')
 
-            data_quality_check()
+            result = data_quality_check()
+
+            # Send back the file to end-user
+            send_docx_to_end_user(result)
 
         except Exception as e:
             print(f"Error loading file: {e}")
     else:
         print("No file selected.")
 
-    # Read the resulting docx file
-    doc = Document('Result Files/Data Quality Report.docx')
+    # # Read the resulting docx file
+    # doc = Document('Result Files/Data Quality Report.docx')
 
-    # Send back the file to end-user
-    send_docx_to_end_user(doc)
+
 
 
 # Function to give user the UI to submit sentiment analysis text
@@ -183,7 +185,6 @@ def get_sentiment_analysis_text():
 
     # Send back the file to end-user
     send_docx_to_end_user(doc)
-
 
 
 
