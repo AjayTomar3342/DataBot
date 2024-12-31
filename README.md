@@ -126,6 +126,43 @@ This is a quick process to start the testing of GitHub project taken from the Of
 * All result files are present in the *Result Files* folder.
 * All user input files are stored in the *User Files* folder.
 
+
+## Graphical Plots available with this application:
+
+  * **Scatter Plot:**
+  User must input two column names both of which must represent numerical values.
+
+  * **Bar Plot:**
+  User must input two column names one of which should be categorical while one numerical.
+
+  * **Line Plot:**
+  User must input two column names one of which should be categorical or numerical while other one should be numerical.
+
+  * **Pie Chart:**
+  User must input two column names one of which should be categorical while one numerical.
+
+  * **Histogram:**
+  User must input one column name which should be the column which contains the values which have to counted (on a frequency basis), therefore a numerical column.
+
+  * **Box Plot:**
+  User must input two column names one of which should be categorical while one numerical.
+
+  * **Area Plot:**
+  User must input four column names. First one is categorical while each of the other three are numerical ones for which the area charts will be made and compared with each other.
+
+  * **Bubble Plot:**
+  User must input four column names. First two should be numerical and are compared on the two axes. Third one represents bubble size while the fourth one represents bubble color. 
+
+  * **Dot Plot:**
+  User must input two column names one of which should be categorical or numerical while other one should be numerical.
+
+  * **Heatmap:**
+  User must input four column names. First two are categorical columns which comes on x-axis and y-axis respectively. Third one is a numerical column which represents 2d matrix values in the heatmap. Fourth column is the y-axis title. 
+
+  **NOTE:** 
+* The columns submitted by the user will be ordered in the same way in the graphical plot. First column will take the place on x-axis will second one will take the place on y-axis.
+
+
 ## UI & Results
 
 ### UI Screenshots
