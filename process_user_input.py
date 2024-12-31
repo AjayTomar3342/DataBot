@@ -17,6 +17,9 @@ def graph_plotting(plot_info):
     # Create the plot
     fig = go.Figure()
 
+    # String to store error message (if applicable)
+    error_message = ''
+
     # Read user submitted file
     df = pd.read_csv('User Files/input_df.csv')
 
@@ -24,17 +27,21 @@ def graph_plotting(plot_info):
     if len(plot_info['columns']) == 1:
         # Get column names
         column_x_name = plot_info['columns'][0][6:].strip()
+        column_names = [column_x_name]
 
     elif len(plot_info['columns']) == 2:
         # Get column names
         column_x_name = plot_info['columns'][0][6:].strip()
         column_y_name = plot_info['columns'][1][6:].strip()
+        column_names = [column_x_name, column_y_name]
 
     elif len(plot_info['columns']) == 3:
         # Get column names
         column_x_name = plot_info['columns'][0][6:].strip()
         column_y_name = plot_info['columns'][1][6:].strip()
         column_z_name = plot_info['columns'][2][6:].strip()
+        column_names = [column_x_name, column_y_name, column_z_name]
+
 
     elif len(plot_info['columns']) == 4:
         # Get column names
@@ -42,7 +49,16 @@ def graph_plotting(plot_info):
         column_y_name = plot_info['columns'][1][6:].strip()
         column_z_name = plot_info['columns'][2][6:].strip()
         column_z1_name = plot_info['columns'][2][6:].strip()
+        column_names = [column_x_name, column_y_name, column_z_name, column_z1_name]
 
+    # Iterate through all user-supplied column names and check if they all are present in the dataframe column list
+    for column in column_names:
+        # If they are present, then go on with the graph plotting
+        if column in df.columns:
+            pass
+        # If they are not, then give back this information to the end-user
+        else:
+            error_message = "Column Name Error"
 
     # Plot scatterplot
     if ((plot_info['plot_type'] == 'scatter') and (column_x_name in df.columns) and (column_y_name in df.columns)
@@ -342,13 +358,11 @@ def graph_plotting(plot_info):
 
 
 
-
     else:
-        print("Please check your supplied graphical plot name and also make sure the columns supplied are present "
-              "in the uploaded data file ")
+        print("Error")
 
     # Return figure
-    return fig
+    return fig, error_message
 
 
 
@@ -383,9 +397,4 @@ def process_user_input(input_text):
     # Return the recognized plot type and columns
     return {"plot_type": plot_type, "columns": columns}
 
-# # Get information involved in user instruction for creation of plots
-# plot_info = process_user_input("Please create a heatmap for Column Age, Column Id, Column 0 and Column Unnamed: 0")
-#
-# # Plot the required graphs
-# figure = graph_plotting(plot_info)
 

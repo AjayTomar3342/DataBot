@@ -5,7 +5,7 @@ from sentiment_analyzer import sentiment_analyzer
 from docx2pdf import convert
 from docx import Document
 from fpdf import FPDF
-from tkinter import font
+from tkinter import font, messagebox
 
 import tkinter as tk
 import tkinter.filedialog as filedialog
@@ -121,7 +121,12 @@ def get_user_instructions():
             plot_info = process_user_input(instruction)
             print("Instruction: ", instruction)
             # Plot the required graphs
-            graph_plotting(plot_info)
+            figure, error_message =  graph_plotting(plot_info)
+            print("Error Message", error_message)
+            # Check if there was a column name error
+            if error_message == "Column Name Error":
+                messagebox.showerror("Error", f"Column Name not found. Please make sure you used the "
+                                              f"correct column name and there are no spaces within the column name")
 
         except Exception as e:
             print(f"Instruction Format Unclear : {e}")
