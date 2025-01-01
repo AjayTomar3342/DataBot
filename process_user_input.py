@@ -8,7 +8,7 @@ import numpy as np
 nlp = spacy.load("en_core_web_lg")
 
 # Predefined list of plot types we expect
-plot_types = ["scatter", "bar", "line", "pie", "histogram", "box", "area", "bubble", "dot", "heatmap"]
+plot_types = ["scatter", "bar", "line", "pie", "histogram", "box", "area", "dot", "heatmap"]
 
 
 # Function to plot the required graphs
@@ -50,6 +50,8 @@ def graph_plotting(plot_info):
         column_z_name = plot_info['columns'][2][6:].strip()
         column_z1_name = plot_info['columns'][2][6:].strip()
         column_names = [column_x_name, column_y_name, column_z_name, column_z1_name]
+
+
 
     # Iterate through all user-supplied column names and check if they all are present in the dataframe column list
     for column in column_names:
@@ -266,42 +268,6 @@ def graph_plotting(plot_info):
         # Show the chart
         fig.show()
 
-    # Plot bubble chart
-    if ((plot_info['plot_type'] == 'bubble') and (column_x_name in df.columns) and (column_y_name in df.columns) and
-            (column_z_name in df.columns) and (column_z1_name in df.columns) and (len(plot_info['columns']) == 4)):
-
-        # Create the bubble chart
-        fig = go.Figure(go.Scatter(
-            x=df[column_x_name],
-            y=df[column_y_name],
-            mode='markers',  # Indicates we are creating a scatter plot (with markers)
-            marker=dict(
-                size=df[column_z_name],  # Bubble size
-                color=df[column_z1_name],  # Bubble color
-                colorscale='Viridis',  # Color scale for the bubbles
-                showscale=True,  # Show color scale on the side
-                opacity=0.6  # Transparency of the bubbles
-            ),
-            text=column_x_name,  # Hover text showing country names
-            hovertemplate=
-            f'<b>%{column_x_name}</b><br>' +  # Display country name in bold
-            'GDP: %{x} Trillion USD<br>' +  # Show GDP value (x-axis)
-            'Life Expectancy: %{y} Years<br>' +  # Show life expectancy (y-axis)
-            'Population: %{customdata} Million<br>' +  # Show population (custom data)
-            '<extra></extra>'  # Hide the extra box
-        ))
-
-        # Add titles and labels
-        fig.update_layout(
-            title='Bubble Chart',
-            xaxis_title=column_x_name,
-            yaxis_title='Y Value',
-            template='plotly_dark'  # Optional: dark template for aesthetics
-        )
-
-        # Show the chart
-        fig.show()
-
     # Plot dotplot
     if ((plot_info['plot_type'] == 'dot') and (column_x_name in df.columns) and (column_y_name in df.columns)
             and (len(plot_info['columns']) == 2)):
@@ -355,8 +321,6 @@ def graph_plotting(plot_info):
 
         # Show the plot
         fig.show()
-
-
 
     else:
         print("Error")

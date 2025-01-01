@@ -100,10 +100,17 @@ def upload_file():
             # Save the file physically
             df.to_csv('User Files/input_df.csv')
 
+            # Message to user if file upload was successfull
+            messagebox.showerror("Success", f"File Uploaded Successfully")
+
+
         except Exception as e:
             print(f"Error loading file: {e}")
     else:
         print("No file selected.")
+
+        # Message to user if file upload was not successfully
+        messagebox.showerror("Error", f"File Uploaded Failed. Try Again.")
 
 
 # Function to give user the UI to submit analysis instructions
@@ -111,7 +118,7 @@ def get_user_instructions():
 
     # Open dialog box to allow user to input instructions
     instruction = simpledialog.askstring("How may I help you?", "Enter your thoughts:"
-    , initialvalue="Please create a heatmap for Column Age, Column Id, Column Year and Column Gender", parent=root)
+    , initialvalue="Please create a dotplot for Column Age and Column Id", parent=root)
 
     if instruction:  # If the user submitted an instruction
         try:
@@ -152,6 +159,9 @@ def data_quality_check_button():
             # Save the file physically
             data_quality_check_df.to_csv('User Files/data_quality_check_df.csv')
 
+            # Message to user if file upload was successfull
+            messagebox.showerror("Success", f"File Uploaded Successfully")
+
             result = data_quality_check()
 
             # Send back the file to end-user
@@ -160,6 +170,10 @@ def data_quality_check_button():
         except Exception as e:
             print(f"Error loading file: {e}")
     else:
+
+        # Message to user if file upload was not successfull
+        messagebox.showerror("Error", f"File Uploaded Failed. Try Again.")
+
         print("No file selected.")
 
     # # Read the resulting docx file
@@ -178,11 +192,19 @@ def get_sentiment_analysis_text():
     if instruction:  # If the user submitted an instruction
         try:
             print("Input Text Received!")
+
+            # Message to user if file upload was successfull
+            messagebox.showerror("Success", f"Text Uploaded Successful")
+
             sentiment_analyzer(instruction)
+
 
         except Exception as e:
             print(f"Input Text Format Unclear : {e}")
     else:
+        # Message to user if text upload was not successfull
+        messagebox.showerror("Error", f"Text Upload Failed. Try Again.")
+
         print("No input text submitted.")
 
     # Read the resulting docx file
