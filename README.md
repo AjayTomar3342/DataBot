@@ -150,9 +150,6 @@ This is a quick process to start the testing of GitHub project taken from the Of
   * **Area Plot:**
   User must input four column names. First one is categorical while each of the other three are numerical ones for which the area charts will be made and compared with each other.
 
-  * **Bubble Plot:**
-  User must input four column names. First two should be numerical and are compared on the two axes. Third one represents bubble size while the fourth one represents bubble color. 
-
   * **Dot Plot:**
   User must input two column names one of which should be categorical or numerical while other one should be numerical.
 
